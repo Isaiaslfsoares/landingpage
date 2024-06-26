@@ -70,12 +70,13 @@
                     <img src="assets/images/meioambiente.svg" alt="">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur illo repellendus, possimus harum incidunt iste ut aliquam, impedit nobis enim nam autem esse odio ex, numquam eos sunt placeat temporibus nihil tenetur! Eveniet itaque sapiente ea, adipisci molestias optio quis! Fugit, repudiandae tenetur porro eligendi consequatur sint blanditiis exercitationem qui.</p>
                 </article>
-
             </section>
-            <section>
+            
+            <section class="noticias">
+                <h1>NOTÍCIAS</h1>
                 <article>
                     <img src="" alt="">
-                    <h1>Notícia 1 Federação</h1>
+                    <h1>O que é uma Federação?</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo cumque ducimus ipsam laboriosam
                         amet maxime impedit saepe dicta rerum consequatur. Iste temporibus atque accusantium pariatur
                         quod adipisci explicabo in! Reprehenderit aspernatur eum ut voluptatum laborum ratione
@@ -112,7 +113,7 @@
                 </article>
                 <article>
                     <img src="" alt="">
-                    <h1>Notícia 2</h1>
+                    <h1>Quais são os princípios do PV?</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt asperiores aliquid officia
                         ipsum autem numquam magnam est reprehenderit explicabo praesentium in repellendus possimus, ex
                         ipsa corporis, illo dignissimos nulla? Eveniet aut maiores dolores sed consequatur architecto
@@ -194,8 +195,61 @@
                         Dolorum!</p>
                 </article>
             </section>
-            <section>
-                <article>
+
+            <aside>
+                <h1>Inscreva-se e fique por dentro das novidades da campanha:</h1> 
+                <form action="">
+                    <fieldset >                       
+                        <label for="name">Nome Completo:</label><br>
+                        <input type="text" id="name" name="name"><br>
+
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" id="email" name="email" ><br>
+
+                        <label for="whatsapp">WhatsApp:</label><br>
+                        <input type="tel" id="whatsapp" name="whatsapp"><br>
+
+                        <label>Você é de Passos-MG?</label><br>
+                        
+                        <label for="sim">
+                            <input type="radio" id="sim" name="cidade" value="sim" checked> Sim
+                        </label>
+                        <label for="nao">
+                            <input type="radio" id="nao" name="cidade" value="nao"> Não
+                        </label><br><br>
+
+                    </fieldset>
+                    
+                    <fieldset id="bairros" class="hidden">
+                        <label for="bairro">Selecione seu bairro:</label>
+                        <select name="bairro" id="bairro">
+                            <option value="bairro1">Aclimação</option>
+                            <option value="bairro1">Agt Passos</option>
+                            <option value="bairro1">Belo Horizonte</option>
+                            <option value="bairro1">Bela Vista</option>
+                            <option value="bairro1">Belo Horizonte</option>
+                            <option value="bairro1">Bom Jesus</option>
+                            <option value="bairro1">Califórnia</option>
+                            <option value="bairro1">Canadá</option>
+                            <option value="bairro1">Candeias</option>
+                            <option value="bairro1">Canjeranus</option>
+                            <option value="bairro1">Carmelo</option>
+                            <option value="bairro1">Casarao</option>
+                            <option value="bairro1">Centro</option>
+                        </select><br><br>
+                    </fieldset>
+                    <fieldset id="cidade" class="hidden">
+                        <label for="city">Cidade:</label><br>
+                        <input type="text" name="city" id="city">
+                    </fieldset><br>
+
+                    <input type="button" name="submit" id="submit" value="Enviar">
+                
+                </form>
+            </aside>
+
+            <section >
+                <article id="financiamento">
                     <img src="" alt="">
                     <h1>Contribua com nosso Financiamento Coletivo</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente animi neque et asperiores
@@ -205,23 +259,20 @@
                 </article>
             </section>
         </main>
-        <aside>
-            FIQUE POR DENTRO
-            <form action=""></form>
-        </aside>
-        <footer>
-            <div class="socialMedia">
-                <ul>
-                    <li><a href="#"><img src="assets/socialmedia/instagram.svg" alt="Instagram"></a></li>
-                    <li><a href="#"><img src="assets/socialmedia/x-twitter.svg" alt="X-Twitter"></a></li>
-                    <li><a href="#"><img src="assets/socialmedia/facebook.svg" alt="Facebook"></a></li>
-                    <li><a href="#"><img src="assets/socialmedia/youtube.svg" alt="YouTube"></a></li>
-                    <li><a href="#"><img src="assets/socialmedia/tiktok.svg" alt="TikTok"></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                </ul>
-            </div>
-        </footer>
     </div>
+    <footer>
+        <h1>Acreditamos que juntos podemos transformar Passos e queremos construir ao seu lado!<br> Vamos nessa?</h1>
+        <div class="socialMedia">
+            <ul>
+                <li><a href="#"><img src="assets/socialmedia/instagram.svg" alt="Instagram"></a></li>
+                <li><a href="#"><img src="assets/socialmedia/x-twitter.svg" alt="X-Twitter"></a></li>
+                <li><a href="#"><img src="assets/socialmedia/facebook.svg" alt="Facebook"></a></li>
+                <li><a href="#"><img src="assets/socialmedia/youtube.svg" alt="YouTube"></a></li>
+                <li><a href="#"><img src="assets/socialmedia/tiktok.svg" alt="TikTok"></a></li>
+                <li><a href="#"><img src="" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 
